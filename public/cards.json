@@ -1,0 +1,53 @@
+[
+      {
+        "id": 1,
+        "name": "Wedding Event",
+        "image": "https://i.ibb.co/g7QmFJz/1661755169-277321192-1044014702815725-7952115549109476634-n.jpg",
+        "price": "$400",
+        "description": "Welcome to our wedding service! We can't wait to share our special day with you.",
+        "color": "#e9255233"
+
+      },
+      {
+        "id": 2,
+        "name": " Birthday Parties",
+        "image": "https://i.ibb.co/fqhrc0Y/Adobe-Stock-133800814-scaled.webp",
+        "price": "$250",
+        "description": "This is our birthday package.We will make sure your birthday will be great!",
+        "color": "#f9e0aa"
+        
+      },
+      {
+        "id": 3,
+        "name": "Anniversaries",
+        "image": "https://i.ibb.co/T2YXk10/anniversary.jpg",
+        "price": "$190",
+        "description": "Anniversaries are an important part of life.So don't forget to share your day with us.",
+        "color": "#c2c6cf"
+      },
+      {
+        "id": 4,
+        "name": "Engagement Parties",
+        "image": "https://i.ibb.co/R30562s/114090-kickstart-your-celebrations-with-an-engagement-party-to-remember-image-credit-party-delights.webp",
+        "price": "$350",
+        "description": "Welcome to engagement package.We will make sure your day will be great!",
+        "color": "#5082444d"
+      },
+      {
+        "id": 5,
+        "name": "Retirement Parties",
+        "image": "https://i.ibb.co/JRC5swv/81-I1kn-Vs-PMS-AC-SL1500.jpg",
+        "price": "$120",
+        "description": " Acknowledge the retiree's accomplishments and display gratitude for the retiree's role and contributions to the team. ",
+        "color": "#08060b"
+      },
+      {
+        "id": 6,
+        "name": "Baby shower",
+        "image": "https://i.ibb.co/8dDChz0/Adobe-Stock-305314005-scaled.webp",
+        "price": "$210",
+        "description": "Good luck to your baby future.let us make this day memorable.",
+        "color": "#faa61e59"
+      }
+    ]
+  

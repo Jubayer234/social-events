@@ -20,7 +20,7 @@ const Navbar = () => {
     </>
 
     return (
-        <div className='max-w-7xl mx-auto pb-5'>
+        <div className='max-w-7xl mx-auto pb-1'>
             <div className='pt-7'>
            <div className=''>
             <img className='mx-auto' src={logo} alt="" />
@@ -28,7 +28,7 @@ const Navbar = () => {
            </div>
            <hr className='w-2/5 mt-2 mx-auto' />
             </div>
-            <div className="navbar mt-7 border-b mb-4">
+            <div className="navbar mt-2 border-b mb-4">
                 <div>
                     <div className="dropdown">
                         <label tabIndex={0} className="btn bg-gradient-to-r from-amber-200 to-red-300 text-white lg:hidden">

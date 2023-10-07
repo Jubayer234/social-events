@@ -4,7 +4,7 @@ import bannerPic from '../../../assets/blurred-city-lights.jpg'
 const Banner = () => {
   return (
     <div>
-        <img src={bannerPic} alt="" />
+       hi
     </div>
   )
 }

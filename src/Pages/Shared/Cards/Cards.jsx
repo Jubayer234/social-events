@@ -5,7 +5,7 @@ import MiddleCards from './MiddleCards/MiddleCards'
 
 const Cards = () => {
   return (
-    <div className='grid grid-cols-1 md:grid-cols-3 gap-6 mx-auto text-center'>
+    <div className='grid grid-cols-1 md:grid-cols-3 gap-6 mx-auto text-center bg-[#FFDFE7]'>
       <LeftSideCard></LeftSideCard>
       <MiddleCards ></MiddleCards>
       <RightSideCard></RightSideCard>

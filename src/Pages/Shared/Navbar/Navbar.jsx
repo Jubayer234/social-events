@@ -1,28 +1,32 @@
 import { Link, NavLink } from 'react-router-dom';
-import logo from '../../../assets/logo.png'
+import logo from '../../../assets/headr.png'
 import userPic from '../../../assets/user.png'
 
 const Navbar = () => {
 
     const navLinks = <>
-        <li className='btn active:text-black bg-gradient-to-r from-amber-200 to-red-300 text-white'> 
+        <li className='btn bg-gradient-to-r from-[#F86486] to-pink-300  text-white'> 
         <NavLink className={({ isActive }) =>
-        isActive ? " text-black underline" : ""} to="/">Home</NavLink> 
+        isActive ? " underline" : ""} to="/">Home</NavLink> 
         </li>
-        <li className=' btn bg-gradient-to-r from-amber-200 to-red-300 text-white'>
+        <li className=' btn bg-gradient-to-r from-[#F86486] to-pink-300 text-white'>
             <NavLink  className={({ isActive }) =>
         isActive ? " text-black underline" : ""} to="/about">About</NavLink>
             </li>
         <li className='btn bg-gradient-to-r from-amber-200 to-red-300 text-white'>
             <NavLink className={({ isActive }) =>
-        isActive ? " text-black underline" : ""} to="/register">Register</NavLink>
+        isActive ? " text-white underline" : ""} to="/register">Register</NavLink>
             </li>
     </>
 
     return (
-        <div>
-            <div className='mt-7'>
-           <h1 className='mx-auto lg:text-5xl font-bold bg-gradient-to-r from-amber-200 to-red-500 text-white w-2/6 h-20 rounded-2xl flex items-center justify-center '>Social Events</h1>
+        <div className='max-w-7xl mx-auto pb-5'>
+            <div className='pt-7'>
+           <div className=''>
+            <img className='mx-auto' src={logo} alt="" />
+            <p className='text-center text-white'>Social Events</p>
+           </div>
+           <hr className='w-2/5 mt-2 mx-auto' />
             </div>
             <div className="navbar mt-7 border-b mb-4">
                 <div>
@@ -48,7 +52,7 @@ const Navbar = () => {
                     </label>
                     <Link className={({ isActive }) =>
         isActive ? " text-black underline" : ""} to='/login' >
-                        <button className='h-11 w-28 ml-3 nav  bg-gradient-to-r from-amber-200 to-red-300 rounded-lg text-xl font-semibold text-white'>Login</button>
+                        <button className='h-11 w-28 ml-3 border bg-gradient-to-r from-[#F86486] to-pink-300   rounded-lg text-xl font-semibold text-white'>Login</button>
                     </Link>
                     
                 </div>

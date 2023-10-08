@@ -1,8 +1,19 @@
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../../../assets/headr.png'
 import userPic from '../../../assets/user.png'
+import { useContext } from 'react';
+import { AuthContext } from '../../../Provider/AuthProvider';
 
 const Navbar = () => {
+
+
+    const {user,logOut} = useContext(AuthContext);
+    const handleLogOut = () =>{
+        logOut()
+        .then()
+        .catch()
+    }
+
 
     const navLinks = <>
         <li className='btn bg-gradient-to-r from-[#F86486] to-pink-300  text-white'> 
@@ -17,6 +28,11 @@ const Navbar = () => {
             <NavLink className={({ isActive }) =>
         isActive ? " text-white underline" : ""} to="/register">Register</NavLink>
             </li>
+        <li className='btn bg-gradient-to-r from-amber-200 to-red-300 text-white'>
+            <NavLink className={({ isActive }) =>
+        isActive ? " text-white underline" : ""} to="/login">Login</NavLink>
+            </li>
+            
     </>
 
     return (
@@ -50,10 +66,16 @@ const Navbar = () => {
                             <img src={userPic} />
                         </div>
                     </label>
-                    <Link className={({ isActive }) =>
-        isActive ? " text-black underline" : ""} to='/login' >
+                    {
+                        user ? 
+                        <button onClick={handleLogOut} className='h-11 w-28 ml-3 border bg-gradient-to-r from-[#F86486] to-pink-300   rounded-lg text-xl font-semibold text-white'>LogOut</button>
+                        :
+                        <Link to={'/login'}>
                         <button className='h-11 w-28 ml-3 border bg-gradient-to-r from-[#F86486] to-pink-300   rounded-lg text-xl font-semibold text-white'>Login</button>
                     </Link>
+
+                    }
+                    
                     
                 </div>
             </div>

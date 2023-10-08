@@ -23,7 +23,7 @@
         "image": "https://i.ibb.co/T2YXk10/anniversary.jpg",
         "price": "$190",
         "description": "Anniversaries are an important part of life.So don't forget to share your day with us.",
-        "color": "#c2c6cf"
+        "color": "#E89A90"
       },
       {
         "id": 4,
@@ -36,10 +36,10 @@
       {
         "id": 5,
         "name": "Retirement Parties",
-        "image": "https://i.ibb.co/JRC5swv/81-I1kn-Vs-PMS-AC-SL1500.jpg",
+        "image": "https://i.ibb.co/HXnkTTm/seo-retirement-party-ideas-013123.jpg",
         "price": "$120",
-        "description": " Acknowledge the retiree's accomplishments and display gratitude for the retiree's role and contributions to the team. ",
-        "color": "#08060b"
+        "description": " let us make ur retirement day special. ",
+        "color": "#EDCDB4"
       },
       {
         "id": 6,
@@ -47,7 +47,7 @@
         "image": "https://i.ibb.co/8dDChz0/Adobe-Stock-305314005-scaled.webp",
         "price": "$210",
         "description": "Good luck to your baby future.let us make this day memorable.",
-        "color": "#faa61e59"
+        "color": "#e9255233"
       }
     ]
   

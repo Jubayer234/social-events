@@ -1,14 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Swal from 'sweetalert2';
 
 const MiddleCards = ({card}) => {
 
     const {id,name,image,price,description,color} = card || {};
 
-    const handleClick = () => {
-      Swal.fire('Any fool can use a computer')
-    }
 
 
   return (

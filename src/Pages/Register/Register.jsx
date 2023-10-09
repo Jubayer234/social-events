@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { AuthContext } from '../../Provider/AuthProvider'
 import Swal from 'sweetalert2';
+import toast, { Toaster } from 'react-hot-toast';
 
 const Register = () => {
 
@@ -19,9 +20,21 @@ const Register = () => {
         const password = form.get('password');
         const photo = form.get('photo')
 
+        if(password.length < 6){
+            toast.error("Your password is less then 6 character")
+            return;
+        }
+        else if(!/[A-Z]/.test(password)){
+            toast.error("Your password should have  at Least one Capital letter")
+            return;
+        }else if(!/(?=.*[@$!%*?&])/.test(password)){
+            toast.error("Password doesn't have a special character")
+            return;
+        }
+
         createUser(email,password,name,photo)
         .then(result => {
-            const user = result.user;
+            console.log(result.user)
             Swal.fire('Register successfully')
             navigate(location?.state ? location.state : '/' )
         })
@@ -72,7 +85,9 @@ const Register = () => {
             
         </div>
     </div>
-</div></div>
+    <Toaster></Toaster>
+</div>
+</div>
   )
 }
 

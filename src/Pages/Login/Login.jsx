@@ -23,7 +23,6 @@ const Login = () => {
 
             })
             .catch(error =>{
-                 Swal.fire('No User There')
                  
                 console.error(error);
             })

@@ -22,7 +22,7 @@ const Navbar = () => {
         </li>
         <li className=' btn bg-gradient-to-r from-[#F86486] to-pink-300 text-white'>
             <NavLink  className={({ isActive }) =>
-        isActive ? " text-black underline" : ""} to="/about">About</NavLink>
+        isActive ? " text-white underline" : ""} to="/about">About Us</NavLink>
             </li>
         <li className='btn bg-gradient-to-r from-amber-200 to-red-300 text-white'>
             <NavLink className={({ isActive }) =>
@@ -68,7 +68,7 @@ const Navbar = () => {
                     </label>
                     {
                         user ? 
-                        <button onClick={handleLogOut} className='h-11 w-28 ml-3 border bg-gradient-to-r from-[#F86486] to-pink-300   rounded-lg text-xl font-semibold text-white'>LogOut</button>
+                        <button onClick={handleLogOut} className='h-11 w-28 ml-3 border bg-gradient-to-r from-[#F86486] to-pink-300   rounded-lg text-xl font-semibold text-white'>LogOut </button>
                         :
                         <Link to={'/login'}>
                         <button className='h-11 w-28 ml-3 border bg-gradient-to-r from-[#F86486] to-pink-300   rounded-lg text-xl font-semibold text-white'>Login</button>

@@ -24,6 +24,10 @@ const Navbar = () => {
             <NavLink  className={({ isActive }) =>
         isActive ? " text-white underline" : ""} to="/about">About Us</NavLink>
             </li>
+        <li className=' btn bg-gradient-to-r from-[#F86486] to-pink-300 text-white'>
+            <NavLink  className={({ isActive }) =>
+        isActive ? " text-white underline" : ""} to="/services">Services</NavLink>
+            </li>
         <li className='btn bg-gradient-to-r from-amber-200 to-red-300 text-white'>
             <NavLink className={({ isActive }) =>
         isActive ? " text-white underline" : ""} to="/register">Register</NavLink>
@@ -44,7 +48,7 @@ const Navbar = () => {
            </div>
            <hr className='w-2/5 mt-2 mx-auto' />
             </div>
-            <div className="navbar mt-2 border-b mb-4">
+            <div className="navbar mt-2 border-b mb-4 lg:w-[1400px] mx-auto ">
                 <div>
                     <div className="dropdown">
                         <label tabIndex={0} className="btn bg-gradient-to-r from-amber-200 to-red-300 text-white lg:hidden">
@@ -60,7 +64,7 @@ const Navbar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <div className="navbar-end">
+                <div className="navbar-end ">
                     <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                         <div className="w-10 rounded-full">
                             <img src={userPic} />

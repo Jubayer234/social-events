@@ -6,3 +6,18 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ - ## Website Name And Live Link:
+     - Name: Fahion And Apparel
+     - Link: https://brand-shop-assignment-10.web.app
+
+## Features Of my website
+
+    .Looks elegent
+    .Has Active Routes
+    .Email and password Authentication enable
+    .can't go to private route without login or registration
+    .Luxury brnad
+    .fetces data from the backed
+    .Easy to use
+    .Responsive for all
+    .Affordable for all
